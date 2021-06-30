@@ -1,0 +1,50 @@
+@media (max-width: 1199px){
+    .logo-ubisoft-connect{
+        display: none;
+    }
+    .small-logo{
+        display: block;
+    }
+
+    .intro-section .section__heading{
+        font-size: 40px;
+        margin: 0 0 16px;
+    }
+
+    .intro-section> .section__presentation:first-of-type{
+        margin: 0 64px 16px;
+    }
+
+    .section{
+       display: flex;
+       flex-direction: column; 
+    }
+    .section__heading{
+        font-size: 40px;
+    }
+    .section__home-subtitle{
+        font-size: 18px;
+    }
+    .section__presentation{
+        font-size: 20px;
+    }
+    .img{
+        max-width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+    .loyalty-img{
+        max-width: 120%;
+        height: auto;
+        margin-left: -36px;
+    }
+    .order-1{
+        order:0;
+    }
+    .order-2{
+        order:0;
+    }
+    #footer hr{
+        margin: 32px -64px 42px;
+    }
+}
