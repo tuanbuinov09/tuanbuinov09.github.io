@@ -12,3 +12,21 @@ for (var i = 0; i < elements.length; i++) {
         console.log(this);
     });
 }
+
+var header__menu = document.getElementById("header__menu");
+var header = document.getElementById("header");
+var subnav = document.getElementById("subnav");
+var rightItems = document.getElementsByClassName("right-items")[0];
+var nav = document.getElementById("nav");
+header__menu.addEventListener('click', function(){
+    if(rightItems.style.display !== "none"){
+        subnav.style.display = "none";
+        nav.style.display = "none";
+        rightItems.style.display ="none";
+    }else{
+        subnav.style.display = "block";
+        nav.style.display = "block";
+        rightItems.style.display ="flex";
+    }
+    
+});
