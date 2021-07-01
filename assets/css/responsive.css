@@ -1,4 +1,7 @@
-@media (min-width: 730px) and (max-width: 1023px){
+@media (max-width: 739px){
+    
+}
+@media (min-width: 740px) and (max-width: 1023px){
     .small-logo{
         display: none;
     }
@@ -20,6 +23,7 @@
         padding: 0;
     }
     .left-items{
+        width: 100%;
         padding: 8px 0px
     }
     #nav{
@@ -63,6 +67,15 @@
     #subnav .subnav-item a{
         font-size: 16px;
     }
+    #subnav li a{
+        transform: none;
+    }
+    #subnav .subnav-item:first-of-type{
+        padding: 0px;
+    }
+    #subnav .subnav-item:first-of-type a{
+        line-height: 60px;
+    }
     .right-items .login-btn{
         margin: 0;
     }
@@ -84,11 +97,121 @@
         border-top: 1px solid var(--white);
     }
     .new-content-slider{
-        margin-top: 40px;
+        margin-top: 48px;
     }
-    
+    .new-content-slider{
+        height: 520px;
+        justify-content: flex-end;
+        background: linear-gradient(0deg, rgb(13, 13, 13) 44%, rgba(13, 13, 13, 0) 60%), url(../img/81NoY73iQ6L._SL1500_.jpg) top center / cover no-repeat;
+        background-size: 120%;
+    }
+    .new-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        align-self: center;
+    }
+    .new-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 0px;
+        align-self: center;
+    }
+    .new-content-slider .cards-container{
+        margin-top: 16px;
+        width: 100%;
+        height: 30%;
+    } 
+    .new-content-slider .cards-container .card{
+        width: 20%;
+        height: 70%;
+    }
+   
+    .new-content-subheading{
+        font-size: 20px;
+        text-align: center;
+    }
+    .intro-section{
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 60px;
+    }
+    .intro-section .section__heading{
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    .intro-section> .section__presentation:first-of-type {
+        margin: 0 0 16px;
+        width: 100%;
+    }
+    .section__presentation{
+        font-size: 20px;
+    }
+  
+    .anchors a{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 16px;
+        margin: 0 14px;
+        width: 24%; 
+        max-width: 24%;
+    }
+    .anchors .title-card{
+        display: flex;
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 21px 28px;
+        border: 1px solid var(--gray-dark);
+        border-radius: 8px;
+        -webkit-transition: margin 0.2s ease-out;
+        -moz-transition: margin 0.2s ease-out;
+        -o-transition: margin 0.2s ease-out;
+       
+    }
 }
 
+@media (min-width: 740px) and (max-width:1199px){
+    .section{
+        display: flex;
+        flex-direction: column; 
+        padding: 32px 0px;
+     }
+     .section__heading{
+         font-size: 40px;
+     }
+     .section__home-subtitle{
+         font-size: 18px;
+     }
+     .section__presentation{
+         font-size: 20px;
+     }
+    .img{
+         max-width: 100%;
+         height: auto;
+         margin-left: 0px;
+     }
+    .loyalty-img{
+         height: auto;
+         margin-left: -36px;
+     }
+     .order-1{
+         order:0;
+     }
+     .order-2{
+         order:0;
+     }
+     #footer hr{
+         margin: 32px -64px 42px;
+     }
+}
 
 @media (min-width: 1024px) and (max-width: 1199px){
     
@@ -131,39 +254,10 @@
     .intro-section> .section__presentation:first-of-type{
         margin: 0 64px 16px;
     }
+    .anchors .title-card{
+        width: 192px;
+        height: 260px;
+    }
 
-    .section{
-       display: flex;
-       flex-direction: column; 
-       padding: 32px 0px;
-    }
-    .section__heading{
-        font-size: 40px;
-    }
-    .section__home-subtitle{
-        font-size: 18px;
-    }
-    .section__presentation{
-        font-size: 20px;
-    }
-    .img{
-        max-width: 100%;
-        height: auto;
-        margin-left: 0px;
-    }
-    .loyalty-img{
-        max-width: 120%;
-        height: auto;
-        margin-left: -36px;
-    }
-    .order-1{
-        order:0;
-    }
-    .order-2{
-        order:0;
-    }
-    #footer hr{
-        margin: 32px -64px 42px;
-    }
 }
 
