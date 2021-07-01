@@ -83,14 +83,41 @@
         border: none;
         border-top: 1px solid var(--white);
     }
-    
+    .new-content-slider{
+        margin-top: 40px;
+    }
     
 }
 
 
 @media (min-width: 1024px) and (max-width: 1199px){
+    
     .logo-ubisoft-connect{
         display: none;
+    }
+    .new-content-slider{
+        justify-content: flex-end;
+        background: linear-gradient(0deg, rgb(13, 13, 13) 40%, rgba(13, 13, 13, 0) 60%), url(../img/81NoY73iQ6L._SL1500_.jpg) top center / cover no-repeat;
+    }
+    .new-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        align-self: center;
+    }
+    .new-content-slider .cards-container .card{
+        width: 20%;
+        height: 50%;
+    }
+    .new-content-subheading{
+        font-size: 20px;
+    }
+    .new-content-slider .cards-container{
+        width: 96%;
+        height: 44%;
     }
     .small-logo{
         display: block;
