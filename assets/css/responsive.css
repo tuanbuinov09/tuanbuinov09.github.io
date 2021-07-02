@@ -1,7 +1,84 @@
-@media (max-width: 739px){
-    
+@media (max-width:1199px){
+    .section{
+        display: flex;
+        flex-direction: column; 
+        padding: 32px 0px;
+     }
+     .section__heading{
+         font-size: 40px;
+     }
+     .section__home-subtitle{
+         font-size: 18px;
+     }
+     .section__presentation{
+         font-size: 20px;
+     }
+    .img{
+         max-width: 100%;
+         height: auto;
+         margin-left: 0px;
+     }
+     .order-1{
+         order:0;
+     }
+     .order-2{
+         order:0;
+     }
+     #footer hr{
+         margin: 32px -64px 42px;
+     }
+     .new-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        align-self: center;
+    }
 }
-@media (min-width: 740px) and (max-width: 1023px){
+
+@media (min-width: 1024px) and (max-width: 1199px){
+    
+    .logo-ubisoft-connect{
+        display: none;
+    }
+    .new-content-slider{
+        justify-content: flex-end;
+        background: linear-gradient(0deg, rgb(13, 13, 13) 40%, rgba(13, 13, 13, 0) 60%), url(../img/81NoY73iQ6L._SL1500_.jpg) top center / cover no-repeat;
+    }
+
+    .new-content-slider .cards-container .card{
+        width: 20%;
+        height: 50%;
+    }
+    .new-content-subheading{
+        font-size: 20px;
+    }
+    .new-content-slider .cards-container{
+        width: 96%;
+        height: 44%;
+    }
+    .small-logo{
+        display: block;
+    }
+
+    .intro-section .section__heading{
+        font-size: 40px;
+        margin: 0 0 16px;
+    }
+
+    .intro-section> .section__presentation:first-of-type{
+        margin: 0 64px 16px;
+    }
+    .anchors .title-card{
+        width: 192px;
+        height: 260px;
+    }
+
+}
+
+@media (max-width: 1023px){
     .small-logo{
         display: none;
     }
@@ -99,6 +176,13 @@
     .new-content-slider{
         margin-top: 48px;
     }
+}
+
+@media (min-width: 740px) and (max-width: 1023px){
+    
+    .new-content-slider{
+        margin-top: 48px;
+    }
     .new-content-slider{
         height: 520px;
         justify-content: flex-end;
@@ -178,30 +262,97 @@
     }
 }
 
-@media (min-width: 740px) and (max-width:1199px){
+@media (max-width: 739px){
+    .new-content-heading{
+        font-size: 32px;
+    }
+    .new-content-subheading{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .new-content-slider{
+        /* height: 520px; */
+        justify-content: flex-end;
+        background: linear-gradient(0deg, rgb(13, 13, 13) 55%, rgba(13, 13, 13, 0) 60%), url(../img/81NoY73iQ6L._SL1500_.jpg) top center / cover no-repeat;
+        background-size: 120%;
+    }
+    .new-content-slider .cards-container{
+        margin-top: -24px;
+        width: 100%;
+        height: 30%;
+        justify-content: center;
+    } 
+    .new-content-slider .cards-container .card{
+        width: 20%;
+        height: 30%;
+        margin: 0 5px;
+    }
+
+    .new-content-slider i{
+        display: none;
+    }
+
     .section{
         display: flex;
         flex-direction: column; 
         padding: 32px 0px;
      }
+     .section__content{
+         padding: 16px;
+     }
      .section__heading{
-         font-size: 40px;
+         font-size: 32px;
+     }
+     .section__home-title{
+         font-size: 14px;
      }
      .section__home-subtitle{
          font-size: 18px;
      }
      .section__presentation{
-         font-size: 20px;
+         font-size: 16px;
      }
+     .intro-section{
+        padding: 0 12px 128px;
+    }
+    .intro-section .section__heading{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 32px;
+    }
+    .intro-section .section__presentation:first-of-type{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .mid-items{
+        width: 96%;
+    }
+    .intro-section .anchors{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .anchors a{
+        min-width: 48%;
+        margin: 8px 0;
+    }
+    .anchors .title-card{
+        margin: 0;
+        padding: 12px;
+        height: 100%;
+        width: 100%;
+    }
+    .title-card .card-label{
+        font-size: 14px;
+    }
     .img{
          max-width: 100%;
          height: auto;
          margin-left: 0px;
      }
-    .loyalty-img{
-         height: auto;
-         margin-left: -36px;
-     }
+     
      .order-1{
          order:0;
      }
@@ -211,53 +362,13 @@
      #footer hr{
          margin: 32px -64px 42px;
      }
+
+     
 }
 
-@media (min-width: 1024px) and (max-width: 1199px){
-    
-    .logo-ubisoft-connect{
-        display: none;
-    }
-    .new-content-slider{
-        justify-content: flex-end;
-        background: linear-gradient(0deg, rgb(13, 13, 13) 40%, rgba(13, 13, 13, 0) 60%), url(../img/81NoY73iQ6L._SL1500_.jpg) top center / cover no-repeat;
-    }
-    .new-text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 0px;
-        margin-left: 0px;
-        align-self: center;
-    }
-    .new-content-slider .cards-container .card{
-        width: 20%;
-        height: 50%;
-    }
-    .new-content-subheading{
-        font-size: 20px;
-    }
-    .new-content-slider .cards-container{
-        width: 96%;
-        height: 44%;
-    }
-    .small-logo{
-        display: block;
-    }
 
-    .intro-section .section__heading{
-        font-size: 40px;
-        margin: 0 0 16px;
-    }
 
-    .intro-section> .section__presentation:first-of-type{
-        margin: 0 64px 16px;
-    }
-    .anchors .title-card{
-        width: 192px;
-        height: 260px;
-    }
 
-}
+
+
 
