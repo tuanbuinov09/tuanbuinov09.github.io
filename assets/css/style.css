@@ -68,7 +68,6 @@ html{
     left: 0;
     right: 0;
     position: fixed;
-    overflow: hidden;
     /* overflow: hidden; */
 }
 #header__menu{
@@ -512,7 +511,8 @@ html{
     outline: none;
 }
 #footer option{
-    color: black;
+    color: white;
+    background-color: var(--gray-dark);
 }
 #footer hr{
     margin: 32px 0px 42px;
