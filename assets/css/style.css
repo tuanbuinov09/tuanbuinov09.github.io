@@ -6,6 +6,19 @@ body{
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #202020;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
 html:root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -74,7 +87,12 @@ html{
     display: none;
     padding: 0 16px;
     border-right: 2px solid lightgray;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    width: 62px;
+    text-align: center;
 }
+
 .small-logo{
     display: none;
 }
@@ -166,6 +184,7 @@ html{
     height: 60px;
     list-style-type: none;
 }
+
 #subnav .subnav-item:first-child{
     height: 80px;
     vertical-align: center;
@@ -226,7 +245,9 @@ html{
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
-    background: linear-gradient(0deg, rgb(13, 13, 13) 10%, rgba(13, 13, 13, 0) 60%), url(../img/81NoY73iQ6L._SL1500_.jpg) top center / cover no-repeat;
+    background: linear-gradient(0deg, rgb(13, 13, 13) 10%, rgba(13, 13, 13, 0) 60%), url(../img/watch-dogs-wallpaper-19-3000x2000.jpg) top center / cover no-repeat;
+    /* background: linear-gradient(0deg, rgb(13, 13, 13) 10%, rgba(13, 13, 13, 0) 60%);  */
+    /* background: linear-gradient(0deg, rgb(13, 13, 13) 10%, rgba(13, 13, 13, 0) 60%), url(../img/81NoY73iQ6L._SL1500_.jpg) top center / cover no-repeat; */
 }
 .new-text{
     width: 44%;
@@ -265,7 +286,8 @@ html{
 .new-content-slider .cards-container .card{
     width: 18%;
     height: 56%;
-    background-image: url(../img/81NoY73iQ6L._SL1500_.jpg);
+    /* background-image: url(../img/81NoY73iQ6L._SL1500_.jpg); */
+    background-image: url(../img/watch-dogs-wallpaper-19-3000x2000.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid var(--gray);
