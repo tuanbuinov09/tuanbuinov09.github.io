@@ -156,6 +156,14 @@ html{
 #nav .nav-item:hover #subnav .subnav-link{
     transform: translateY(0%);
 }
+/* spin arrow animation toggle class spin trong jquery de chay animation*/
+#nav .subnav-container i{
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-out;
+}
+#nav .subnav-container i.spin {
+    transform: rotate(-180deg);
+}
 
 #subnav{
     /* display: none; */

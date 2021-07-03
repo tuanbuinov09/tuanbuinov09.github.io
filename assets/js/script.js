@@ -17,16 +17,10 @@ for (var i = 0; i < elements.length; i++) {
     for (var i = 0; i < elements.length; i++) {
       elements[i].style.border = "1px solid var(--gray)";
     }
-    // slider.style.background = this.style.backgroundImage;
-    // console.log(slider.style.background.indexOf("("));
-    // console.log(slider.style.background.indexOf(")"));
-    // var start = slider.style.background.indexOf("(") + 1;
-    // var end = slider.style.background.indexOf(")") - 2;
-    // console.log("aaaaaaaaa"+ slider.style.background.substr(start, end))
-
-    // var s = slider.style.background.replace(slider.style.background.substr(start, end), this.style.backgroundImage)
-    // console.log("s:   "+ s);
-    // slider.style.background = s;
+    // slider.style.backgroundImage = this.style.backgroundImage +;
+    // slider.style.backgroundRepeat = "no-repeat";
+    // slider.style.backgroundSize = "cover";
+    // slider.style.backgroundPosiotion = "top center";
     this.style.border = "3px solid var(--primary)";
     console.log(this);
   });
@@ -38,7 +32,10 @@ var header = document.getElementById("header");
 var subnav = document.getElementById("subnav");
 var rightItems = document.getElementsByClassName("right-items")[0];
 var nav = document.getElementById("nav");
-
+// jquery is the best
+$(".subnav-container").hover(function () {
+  $('#nav .subnav-container i').toggleClass('spin');
+});
 
 $('#header__menu').click(function () {
   $(this).toggleClass('fa-times');
@@ -58,6 +55,9 @@ for (var i = 0; i < menuItems.length; i++) {
   menuItem.onclick = function () {
     var isParentMenu = this.nextElementSibling && this.nextElementSibling.id === "subnav";
     if (isParentMenu) {
+      $('#nav').toggleClass('click');
+      $("#header__menu").toggleClass('fa-times');
+      $('.right-items').toggleClass('click');
       event.preventDefault();
     } else {
       $('#nav').toggleClass('click');

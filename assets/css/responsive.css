@@ -80,6 +80,16 @@
 }
 
 @media (max-width: 1023px){
+    #subnav .subnav-item:hover{
+        background-color: var(--gray-dark);
+    }
+    #subnav .subnav-item:hover .subnav-link{
+        color: var(--primary);
+        transition: all 0.5s ease-out;
+    }
+    #nav .nav-item:hover .nav-link{
+        color: var(--primary);
+    }
     .small-logo{
         display: none;
     }
