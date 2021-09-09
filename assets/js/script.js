@@ -43,10 +43,10 @@ $('#header__menu').click(function () {
   $('.right-items').toggleClass('click');
 });
 
-var x = document.getElementsByTagName('h2');
-for (var i = 0; i < x.length; i++) {
-  x[i].innerText = "Anh yêu em";
-}
+// var x = document.getElementsByTagName('h2');
+// for (var i = 0; i < x.length; i++) {
+//   x[i].innerText = "Anh yêu em";
+// }
 
 var menuItems = document.querySelectorAll("#nav li a[href*='#']");
 console.log(menuItems);
